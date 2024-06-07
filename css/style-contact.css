@@ -1,0 +1,228 @@
+/* Begin Body */
+body {
+  margin: 0;
+  background-color: #a0c49d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Begin Header */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 500px;
+  gap: 20px;
+  background-color: #a0c49d;
+  border-radius: 10px;
+}
+header img {
+  width: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+}
+header p {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  margin-top: 20px;
+}
+.header2 {
+  padding: 0px 5px 0px 5px;
+}
+
+/* Begin Nav */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #c4d7b2;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-radius: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: white;
+  background-color: #a0c49d;
+  border-radius: 5px;
+}
+
+/* Begin Main */
+main {
+  display: flex;
+  align-items: stretch;
+}
+.section-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Begin Article */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.artiekel1 {
+  background-color: #e1ecc8;
+  border-radius: 5px;
+}
+.artiekel2 {
+  background-color: #f7ffe5;
+  padding: 10px;
+}
+article p {
+  width: 600px;
+}
+img {
+  width: 30%;
+  height: 30%;
+}
+.border-top-right {
+  border-top: solid 10px #789b76;
+  border-right: solid 10px #789b76;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+/* Begin Aside */
+aside {
+  flex: 0 0 20%;
+  margin: 5px;
+  background-color: #f7ffe5;
+  border-bottom: solid 10px #789b76;
+  border-radius: 15px;
+  padding: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+aside input {
+  padding: 2%;
+  margin: 5px;
+  width: auto;
+}
+
+/* Begin Footer */
+footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  background-color: #a0c49d;
+  height: 50px;
+}
+footer a {
+  
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+  background-color: #c4d7b2;
+  border-radius: 5px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  gap: 10px;
+}
+
+/* Begin @media */
+/* Telefoon */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-top: 20px;
+  }
+
+  header p {
+    width: auto;
+    text-align: center;
+  }
+  header img {
+    width: 30%;
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article p {
+    width: 100%; 
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+  }
+
+  aside {
+    width: 100%; 
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Laptop, TV of Ipad etc */
+@media only screen and (min-width: 601px) {
+  header {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    text-align: left;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  aside {
+    width: 20%;
+  }
+}
+/*----*/

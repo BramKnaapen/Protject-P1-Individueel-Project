@@ -1,0 +1,213 @@
+/* Begin Body */
+body {
+  margin: 0;
+  background-color: #a0c49d;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* begin header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  gap: 20px;
+  background-color: #a0c49d;
+  border-radius: 10px;
+}
+header img {
+  width: 45%;
+  height: 85%;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: auto;
+}
+.header2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #a0c49d;
+  padding: 0px 5px 0px 5px;
+  flex:1;
+}
+/* Begin Nav*/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #c4d7b2;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-radius: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: white;
+  background-color: #a0c49d;
+  border-radius: 5px;
+}
+/* Begin Main */
+main {
+  display: flex;
+  align-items: stretch;
+}
+
+.section-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+/* Begin Article */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+article p {
+  width: 600px;
+}
+
+.artiekel1 {
+  background-color: #e1ecc8;
+}
+.artiekel2 {
+  background-color: #f7ffe5;
+}
+.raceuitslag {
+  width: 60%;
+  height: 60%;
+}
+.border-bottom-right {
+  border-bottom: solid 10px #789b76;
+  border-right: solid 10px #789b76;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+/* Begin Aside */
+aside {
+  flex: 0 0 20%;
+  background-color: #f7ffe5;
+  border-bottom: solid 10px #789b76;
+  border-radius: 15px;
+  padding: 5px;
+}
+aside img {
+  height: 10%;
+  width: 60%;
+}
+/* Begin Footer */
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: #a0c49d;
+  height: 50px;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+  background-color: #c4d7b2;
+  border-radius: 5px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  gap: 10px;
+}
+/* Begin @media */
+/* Telefoon */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 20px; 
+  }
+
+  header p {
+    width: 100%; 
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article p {
+    width: 100%; 
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%; 
+    height: auto;
+  }
+
+  aside {
+    width: 100%; 
+  }
+
+  aside img {
+    width: 100%; 
+    height: auto;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Laptop, TV of Ipad etc */
+@media only screen and (min-width: 601px) {
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    text-align: left;
+  }
+
+  main {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  aside {
+    width: 20%;
+  }
+}
+/*----*/

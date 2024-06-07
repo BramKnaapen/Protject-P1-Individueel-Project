@@ -1,0 +1,232 @@
+/* Begin Body */
+body {
+  background: #a0c49d;
+  margin: 0;
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Begin Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 500px;
+  background-color: #a0c49d;
+  border-radius: 10px;
+}
+header img {
+  top: 50px;
+  width: 50%;
+  height: 50%;
+}
+header p {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo, a {
+  display: flex;
+  align-items: center;
+}
+.header2 {
+  margin-top: 120px;
+  background-color: #a0c49d;
+  padding: 0px 5px 0px 5px;
+}
+
+/* Begin Nav */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: #c4d7b2;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  border-radius: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: white;
+  background-color: #a0c49d;
+  border-radius: 5px;
+}
+
+/* Begin Main */
+main {
+  display: flex;
+  align-items: stretch;
+}
+
+.section-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Begin Article */
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 10px #789b76;
+  border-radius: 15px;
+  padding: 5px;
+}
+article p {
+  width: 600px;
+}
+img {
+  width: 30%;
+  height: 30%;
+}
+
+.artiekel1 {
+  background-color: #e1ecc8;
+}
+.artiekel2 {
+  background-color: #f7ffe5;
+}
+
+/* Begin Aside */
+aside {
+  flex: 0 0 20%;
+  background-color: #f7ffe5;
+  border-left: 10px solid #789b76;
+  border-radius: 15px;
+  padding: 5px;
+}
+aside h1 {
+  font-size:large;
+}
+aside p {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+aside img {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 200px;
+}
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Begin Footer */
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: #a0c49d;
+  height: 50px;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+  background-color: #c4d7b2;
+  border-radius: 5px;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  gap: 10px;
+}
+
+/* Begin @media */
+/* Telefoon */
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    margin-top: 20px; 
+  }
+
+  header p {
+    width: 100%; 
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article p {
+    width: 100%; 
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  aside {
+    width: 100%; 
+  }
+
+  aside img {
+    width: 100%; 
+    height: auto;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Laptops, TV of Ipad etc */
+@media only screen and (min-width: 601px) {
+  header {
+    justify-content: space-between;
+  }
+
+  nav {
+    flex-direction: row;
+  }
+
+  nav a {
+    text-align: left;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  aside {
+    width: 20%; 
+  }
+}
+/*----*/
